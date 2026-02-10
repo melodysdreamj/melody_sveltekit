@@ -48,7 +48,7 @@ npm run dev
 | 서버 DB | AWS DynamoDB, Cloudflare Workers KV |
 | 클라이언트 DB | Dexie (IndexedDB) |
 | 인증 | Firebase, PocketBase |
-| 보안 | jose + jsonwebtoken (JWT) |
+| 보안 | jose (JWT), hooks.server.ts (보안 헤더) |
 | PWA | @vite-pwa/sveltekit |
 
 ## 아키텍처
