@@ -2,7 +2,9 @@
   import { page } from "$app/stores";
 </script>
 
-<div class="flex min-h-full flex-col bg-white dark:bg-gray-900 pt-16 pb-12">
+<div
+  class="flex min-h-full flex-col bg-contents-color dark:bg-dark-contents-color pt-16 pb-12"
+>
   <main
     class="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-6 lg:px-8"
   >
@@ -17,7 +19,7 @@
           {$page.status}
         </p>
         <h1
-          class="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl"
+          class="mt-2 text-4xl font-bold tracking-tight text-text-color dark:text-dark-text-color sm:text-5xl"
         >
           {#if $page.status === 404}
             Page not found.
@@ -25,7 +27,7 @@
             Something went wrong.
           {/if}
         </h1>
-        <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
+        <p class="mt-2 text-base text-brand-gray dark:text-dark-brand-gray">
           {#if $page.error?.message}
             {$page.error.message}
           {:else}

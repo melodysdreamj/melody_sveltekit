@@ -29,6 +29,7 @@ npm run dev
 | `vite.config.ts` | PWA `name`, `short_name`, `description` 수정 |
 | `static/manifest.webmanifest` | `name`, `short_name`, `description` 수정 (**vite.config.ts와 동일하게**) |
 | `src/app.html` | `<meta name="description">` 내용을 위와 동일하게 수정 |
+| `static/robots.txt` | `Sitemap:` URL을 실제 도메인으로 변경 |
 | `.env` | `.env.example`을 복사하여 실제 키 입력 |
 | `src/lib/preload.svelte` | AdSense·GA4 ID를 내 계정 ID로 교체 |
 
