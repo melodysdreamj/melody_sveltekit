@@ -1,3 +1,8 @@
+<!--
+  프리로드 스크립트 (AdSense + GA4)
+  사용법: YOUR_ADSENSE_CLIENT_ID / YOUR_GA4_MEASUREMENT_ID를 실제 값으로 교체한 뒤,
+         아래 loadAds() / loadAnalytics() 호출부의 주석을 해제하세요.
+-->
 <svelte:head>
     <script>
         function loadAds() {
@@ -27,9 +32,7 @@
             gtag("config", "YOUR_GA4_MEASUREMENT_ID");
         }
 
-        // YOUR_ADSENSE_CLIENT_ID / YOUR_GA4_MEASUREMENT_ID 를 실제 값으로 교체한 뒤
-        // 아래 주석을 해제하세요.
-
+        // ── AdSense ──────────────────────────────
         // if (localStorage.getItem("visitedBeforeAd")) {
         //     loadAds();
         // } else {
@@ -37,6 +40,7 @@
         //     setTimeout(loadAds, 3400);
         // }
 
+        // ── Google Analytics 4 ───────────────────
         // if (localStorage.getItem("visitedBeforeAnalytics")) {
         //     loadAnalytics();
         // } else {

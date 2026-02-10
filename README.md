@@ -47,8 +47,8 @@ npm run dev
 | 스타일링 | Tailwind CSS 3 + Typography |
 | 서버 DB | AWS DynamoDB, Cloudflare Workers KV |
 | 클라이언트 DB | Dexie (IndexedDB) |
-| 인증 | Firebase, PocketBase |
-| 보안 | jose (JWT), hooks.server.ts (보안 헤더) |
+| 인증 | 필요 시 선택: `npm i firebase` 또는 `npm i pocketbase` |
+| 보안 | jose (JWT), hooks.server.ts (보안 헤더 + CSP) |
 | PWA | @vite-pwa/sveltekit |
 
 ## 아키텍처

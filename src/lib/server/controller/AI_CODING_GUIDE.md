@@ -40,8 +40,8 @@ src/lib/server/controller/
 ```typescript
 // src/lib/server/controller/post/_.ts
 
-import { PostDynamoDb } from '$lib/server/backend/dynamodb/post/_.ts';
-import { Post } from '$lib/server/backend/dynamodb/post/_.ts';
+import { PostDynamoDb } from '$lib/server/backend/dynamodb/post/_';
+import { Post } from '$lib/server/backend/dynamodb/post/_';
 
 export class PostController {
 

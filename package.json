@@ -40,8 +40,6 @@
 		"@aws-sdk/client-dynamodb": "^3.687.0",
 		"@tailwindcss/typography": "^0.5.15",
 		"dexie": "^4.0.8",
-		"firebase": "^11.7.3",
-		"jose": "^6.0.11",
-		"pocketbase": "^0.26.0"
+		"jose": "^6.0.11"
 	}
 }

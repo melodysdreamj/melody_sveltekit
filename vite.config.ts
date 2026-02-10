@@ -14,7 +14,7 @@ export default defineConfig({
       manifest: {
         name: "SvelteKit PWA",
         short_name: "SvelteKit PWA",
-        description: "SvelteKit PWA 프로젝트 설명쪽 - 나중에 바꿔야함",
+        description: "프로젝트 설명을 입력하세요",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
