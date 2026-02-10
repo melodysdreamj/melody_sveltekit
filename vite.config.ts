@@ -1,7 +1,8 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import { SvelteKitPWA } from "@vite-pwa/sveltekit";
+import { defineConfig } from "vite";
 
-const config = {
+export default defineConfig({
   plugins: [
     sveltekit(),
     SvelteKitPWA({
@@ -60,6 +61,4 @@ const config = {
     host: "0.0.0.0",
     port: 3000,
   },
-};
-
-export default config;
+});

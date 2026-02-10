@@ -1,7 +1,9 @@
 <script>
     import "../app.css";
-    import PreLoad from '$lib/preload.svelte'
+    import PreLoad from "$lib/preload.svelte";
+
+    let { children } = $props();
 </script>
 
 <PreLoad />
-<slot />
+{@render children()}

@@ -4,7 +4,7 @@ declare global {
 
 	declare namespace App {
 		// interface Error {}
-		interface Locals {}
+		interface Locals { }
 		// interface PageData {}
 		interface Platform {
 			env: {
@@ -16,11 +16,7 @@ declare global {
 			};
 			caches: CacheStorage & { default: Cache }
 		}
-
-		interface Session {}
-
-		interface Stuff {}
 	}
 }
 
-export {};
+export { };

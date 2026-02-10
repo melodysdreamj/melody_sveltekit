@@ -27,9 +27,12 @@ npm run dev
 |---|---|
 | `package.json` | `name` 필드를 프로젝트명으로 변경 |
 | `vite.config.ts` | PWA `name`, `short_name`, `description` 수정 |
-| `static/manifest.webmanifest` | `name`, `short_name` 수정 |
+| `static/manifest.webmanifest` | `name`, `short_name`, `description` 수정 (**vite.config.ts와 동일하게**) |
+| `src/app.html` | `<meta name="description">` 내용을 위와 동일하게 수정 |
 | `.env` | `.env.example`을 복사하여 실제 키 입력 |
 | `src/lib/preload.svelte` | AdSense·GA4 ID를 내 계정 ID로 교체 |
+
+> ⚠️ **PWA 메타데이터 동기화**: `vite.config.ts`, `static/manifest.webmanifest`, `src/app.html` 3곳의 앱 이름·설명이 **반드시 일치**해야 합니다.
 
 > 💡 사용하지 않는 백엔드 모듈 폴더(예: `dynamodb/`, `workerkv/`)는 삭제해도 됩니다.
 
